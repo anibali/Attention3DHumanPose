@@ -25,9 +25,6 @@ from common.utils import deterministic_random
 from common.ranger import Ranger
 from torch.optim import lr_scheduler
 
-os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
-
 torch.backends.cudnn.benchmark = True
 
 args = parse_args()
